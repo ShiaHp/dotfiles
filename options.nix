@@ -4,18 +4,18 @@
 
 let
   # THINGS YOU NEED TO CHANGE
-  username = "zaney";
-  hostname = "hyprnix";
+  username = "shia";
+  hostname = "shia";
   userHome = "/home/${username}";
   flakeDir = "${userHome}/zaneyos";
-  waybarStyle = "slickbar-num"; # simplebar, slickbar, slickbar-num, or default
+  waybarStyle = "slickbar"; # simplebar, slickbar, slickbar-num, or default
 in {
   # User Variables
-  username = "${username}";
-  hostname = "${hostname}";
-  gitUsername = "Tyler Kelley";
-  gitEmail = "tylerzanekelley@gmail.com";
-  theme = "catppuccin-mocha";
+  username = "shia";
+  hostname = "shia";
+  gitUsername = "shia";
+  gitEmail = "thienxa2820022@gmail.com";
+  theme = "apathy";
   slickbar = if waybarStyle == "slickbar" then true else false;
   slickbar-num = if waybarStyle == "slickbar-num" then true else false;
   simplebar = if waybarStyle == "simplebar" then true else false;
@@ -37,14 +37,14 @@ in {
   theSecondKBDLayout = "de";
   theKBDVariant = "";
   theLCVariables = "en_US.UTF-8";
-  theTimezone = "America/Chicago";
-  theShell = "bash"; # Possible options: bash, zsh
+  theTimezone = "Asia/Ho_Chi_Minh";
+  theShell = "zsh"; # Possible options: bash, zsh
   theKernel = "default"; # Possible options: default, latest, lqx, xanmod, zen
   sdl-videodriver = "x11"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
-  cpuType = "intel";
-  gpuType = "amd";
+  cpuType = "amd";
+  gpuType = "nvidia";
 
   # Nvidia Hybrid Devices
   # ONLY NEEDED FOR HYBRID
@@ -82,5 +82,7 @@ in {
 
   # Enable Python & PyCharm
   python = false;
-
+	
+  #input
+  japanese-input = true;
 }

@@ -33,7 +33,7 @@ in {
     }
 
     mainbox {
-      children: [ inputbar, listview, mode-switcher ];
+      children: [inputbar, listview, mode-switcher ];
     }
 
     // ELEMENT
@@ -82,8 +82,7 @@ in {
     }
 
     inputbar {
-      background-image: url("~/.config/rofi/rofi.jpg", width);
-      padding: 180 0 0;
+      padding: 0 0 0;
       margin: 0 0 0 0;
     } 
 

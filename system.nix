@@ -73,6 +73,12 @@ in {
       options = "--delete-older-than 7d";
     };
   };
-
+  
+   i18n = {
+      inputMethod = {
+        enabled = "ibus";
+        ibus.engines = with pkgs.ibus-engines; [ mozc ];
+      };
+    };
   system.stateVersion = "23.11";
 }

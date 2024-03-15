@@ -30,6 +30,7 @@ lib.mkIf (theShell == "zsh") {
         source $HOME/.zshrc-personal
       fi
       eval "$(starship init zsh)"
+      eval "$(zoxide init zsh)"
     '';
     initExtraFirst = ''
       HISTFILE=~/.histfile
@@ -44,6 +45,7 @@ lib.mkIf (theShell == "zsh") {
 
     };
     shellAliases = {
+      reboot="sudo reboot";
       sv="sudo vim";
       flake-rebuild="nh os switch --nom --hostname ${hostname}";
       flake-update="nh os switch --nom --hostname ${hostname} --update";
