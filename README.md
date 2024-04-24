@@ -1,5 +1,5 @@
 # dotfiles
-This repository was created to store my current OS configuration for future reference, for next time once again reinstalling Arch. The dotfiles were initially sourced from [this repository](https://github.com/tibssy/hyprland-dotfiles).
+This repository was created to store my current OS configuration for future reference, for next time once again reinstalling Arch. The dotfiles were initially sourced from [this repository](https://github.com/end-4/dots-hyprland).
 
 Additionally, it contains some notes on using Arch Linux:
 For installing drivers on Nvidia laptops:
